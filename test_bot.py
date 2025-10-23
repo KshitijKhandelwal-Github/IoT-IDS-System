@@ -3,8 +3,8 @@ import telegram
 import asyncio # <<< NEW: Import the asyncio library
 
 # Paste your credentials here
-TELEGRAM_TOKEN = "8246777701:AAGPRRczONwxjAcyHrQ5rUMteqERUtgvzAc"
-CHAT_ID = "5295754598"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_HTTP_API_TOKEN_HERE")
+CHAT_ID = os.getenv("CHAT_ID", "YOUR_CHAT_ID_HERE")
 
 # <<< CHANGED: The main logic is now in an 'async' function
 async def main():

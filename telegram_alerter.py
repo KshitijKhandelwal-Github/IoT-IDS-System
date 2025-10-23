@@ -3,8 +3,8 @@ import time, os, telegram, asyncio
 from datetime import datetime, timedelta
 
 # --- PASTE YOUR CREDENTIALS HERE ---
-TELEGRAM_TOKEN = "YOUR_HTTP_API_TOKEN_HERE"
-CHAT_ID = "YOUR_CHAT_ID"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_HTTP_API_TOKEN_HERE")
+CHAT_ID = os.getenv("CHAT_ID", "YOUR_CHAT_ID_HERE")
 ALERT_LOG_FILE = 'logs/attack.log'
 
 # --- IDS CONFIGURATION ---

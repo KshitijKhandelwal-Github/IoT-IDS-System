@@ -3,7 +3,7 @@ import os, telegram, asyncio
 from telegram.ext import Application, CommandHandler
 
 # --- PASTE YOUR CREDENTIALS HERE ---
-TELEGRAM_TOKEN = "YOUR_HTTP_API_TOKEN_HERE"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_HTTP_API_TOKEN_HERE")
 ALERT_LOG_FILE = 'logs/attack.log'
 COORDINATION_FILE = 'coordination.log'
 

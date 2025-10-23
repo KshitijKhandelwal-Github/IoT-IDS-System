@@ -13,8 +13,8 @@ logging.basicConfig(
 _logger = logging.getLogger(__name__)
 
 # --- PASTE YOUR CREDENTIALS HERE ---
-TELEGRAM_TOKEN = "YOUR_HTTP_API_TOKEN_HERE"
-CHAT_ID = "YOUR_CHAT_ID"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_HTTP_API_TOKEN_HERE")
+CHAT_ID = os.getenv("CHAT_ID", "YOUR_CHAT_ID_HERE")
 
 async def main():
     """Sends a test message with advanced options."""
