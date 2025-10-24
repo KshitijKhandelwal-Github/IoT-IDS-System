@@ -65,8 +65,8 @@ Your Telegram API keys are stored securely in a .env file.
 ``` Bash
 nano .env
 ```
-- Add your credentials like this:
-  **TELEGRAM_TOKEN**="1234567890:ABCdEfGhIjKlMnOpQrStUvWxYz"
+- Add your credentials like this: \
+  **TELEGRAM_TOKEN**="1234567890:ABCdEfGhIjKlMnOpQrStUvWxYz" \
   **CHAT_ID**="123456789"
 - Save and exit.
 
